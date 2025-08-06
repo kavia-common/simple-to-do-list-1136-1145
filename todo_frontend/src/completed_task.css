@@ -1,0 +1,81 @@
+/* COMPLETED TASK screen styling, tokenized */
+@import url('./design-tokens.css');
+
+.completed-task-page {
+  width: 414px;
+  min-height: 896px;
+  background: var(--color-d6d7ef);
+  position: relative;
+}
+.status-bar {
+  width: 100%;
+  height: 44px;
+}
+.appbar-main {
+  position: relative;
+  width: 414px;
+  height: 118px;
+  background: var(--color-9395d3);
+}
+.appbar-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--color-9395d3);
+  border-bottom-left-radius: var(--radius-15);
+  border-bottom-right-radius: var(--radius-15);
+  z-index: 0;
+}
+.turn-back-btn {
+  position: absolute;
+  top: 45px;
+  left: 18px;
+  width: 30px;
+  height: 30px;
+  background: var(--color-ffffff);
+  border-radius: 100%;
+  border: 3px solid var(--color-ffffff);
+  z-index: 2;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.completed-title {
+  position: absolute;
+  left: 65px;
+  top: 45px;
+  z-index: 1;
+}
+.todos-section {
+  padding: 40px 7px 0 7px;
+}
+.todo-item-completed {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  background: none;
+  position: relative;
+}
+.todo-item-bg {
+  position: absolute;
+  width: 400px;
+  height: 82px;
+  background: var(--color-ffffff);
+  border-radius: var(--radius-15);
+  z-index: 1;
+}
+.todo-item-text {
+  position: absolute;
+  left: 25px;
+  top: 20px;
+  z-index: 2;
+}
+
+@media (max-width: 414px) {
+  .completed-task-page, .appbar-main {
+    width: 100vw;
+    min-width: 100vw;
+    max-width: 100vw;
+  }
+}
